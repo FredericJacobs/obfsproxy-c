@@ -1,0 +1,1 @@
+See doc/obfs2/howto/ for information on how to setup obfsproxy with obfs2.

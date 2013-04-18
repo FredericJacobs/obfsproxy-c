@@ -1,0 +1,37 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH OBFSPROXY 1 "02/12/2012" Linux "User Manuals"
+.SH NAME
+obfsproxy \- a pluggable transports proxy
+.SH SYNOPSIS
+.B obfsproxy [obfsproxy_args] protocol_name [protocol_args] protocol_options protocol_name
+.SH DESCRIPTION
+.B obfsproxy
+is a tool that attempts to circumvent censorship, by transforming the
+Tor traffic between the client and the bridge. This way, censors, who
+usually monitor traffic between the client and the bridge, will see
+innocent-looking transformed traffic instead of the actual Tor traffic.
+
+.B obfsproxy
+supports multiple protocols, called pluggable transports,
+which specify how the traffic is transformed. For example, there might
+be a HTTP transport which transforms Tor traffic to look like regular
+HTTP traffic.
+.SH OPTIONS
+.IP --log-file=<file>
+Set logfile
+.IP --log-min-severity=warn|info|debug|notice
+Set minimum logging severity
+.IP --no-log
+Disable logging
+.SH SEE ALSO
+.B tor(1)
+
+.B https://www.torproject.org
+.SH BUGS
+Plenty, probably.
+.B obfsproxy
+is still in development.  Please report them.
+.SH AUTHOR
+George Kadianakis <asn at torproject.org>.

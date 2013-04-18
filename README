@@ -1,0 +1,13 @@
+obfsproxy: a pluggable transports proxy
+
+obfsproxy is a pluggable transports proxy written in C. It's compliant
+to the Tor pluggable transports specification, and its modular
+architecture allows it to support multiple pluggable transports.
+
+To build obfsproxy from source:
+   ./autogen.sh && ./configure && make
+
+See doc/ for more obfsproxy information.
+
+To report bugs or submit patches, please use the Tor Project bugtracker
+at trac.torproject.org.  Thanks!
